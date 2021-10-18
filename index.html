@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+ <link rel="stylesheet" href="main.sass">
+</head>
+
+<body class="sidebar-main">
+
+<div id="header">
+ <div id="logo"> <img src="images/micro.jpg" width="100px" height="90px"></img> </div>
+ <div id="main-title"><h1> Radio patio </h1></div>
+
+ <p>
+ <div id="div_ma">
+ <audio src="audios/AC-DC.mp3"></audio>
+ <audio src="audios/Aretha.mp3"></audio>
+ <audio src="audios/Bob Marley.mp3"></audio>
+ <audio src="audios/Red Hot Chili Peppers.mp3"></audio>
+  <a onclick="play()" href="#" class="material-icons">play_arrow </a>
+  <a onclick="anterior()" href="#" class="material-icons">arrow_back </a>
+  <a onclick="pause()" href="#" class="material-icons">pause </a>
+  <a onclick="siguiente()" href="#" class="material-icons">arrow_forward </a>
+  <a onclick="volUp()" href="#" class="material-icons">volume_up </a>
+  <a onclick="volDown()" href="#" class="material-icons">volume_off </a>
+ </div>
+ </p>
+
+</div>
+
+<div id="body">
+ <div id="main"><img src="images/micro.jpg" width="400px" height="400px"> </div>
+ <div id="sidebar">
+  <div><a href="#" class="menus">Inicio</a></div>
+  <div><a href="#" class="menus">¿Dónde Estamos?</a></div>
+  <div><a href="#" class="menus">Nuestros programas</a></div>
+  <div><a href="#" class="menus">Programación</a></div>
+
+ </div>
+
+</div>
+
+
+<div id="footer">Pie de página</div>
+
+
+<script src="Audio.js"></script>
+</body>
+
+
+</html>

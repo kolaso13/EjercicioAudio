@@ -1,0 +1,23 @@
+{
+  "name": "Ejercicio_Audio",
+  "version": "0.0.1",
+  "description": "Exercise one",
+  "repository": "https://github.com/kolaso13/EjercicioAudio.git",
+  "author": "kolaso13 <adrbrarare@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "parcel build *.html",
+    "start": "parcel serve *.html --open"
+  },
+  "devDependencies": {
+    "@parcel/transformer-image": "2.0.0",
+    "@parcel/transformer-sass": "2.0.0",
+    "autoprefixer": "^10.3.7",
+    "parcel": "^2.0.0",
+    "postcss-uncss": "^0.17.0",
+    "posthtml-extend": "^0.6.0",
+    "posthtml-include": "^1.7.2",
+    "uncss": "^0.17.3"
+  }
+}

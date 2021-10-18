@@ -1,0 +1,131 @@
+div
+  &#body
+    margin: auto auto auto auto
+
+    /* top right bottom left: equivale a poner un sólo auto
+    width: 710px
+
+    /* El ancho del estilo lo coloca en 710px
+    clear: left
+
+  /*En el body quito el flotante para que la siguiente caja quede debajo
+
+  &#header
+    margin: auto auto auto auto
+    width: 710px
+    border: solid 3px #815608
+    border-radius: 15px
+
+  /*borde redondeado de radio 15px
+
+  &#sidebar
+    display: none
+
+    /*este div no lo hace visible
+    border: solid 1px #CFC
+    padding-left: 15px
+
+/*Se modifica el ancho
+
+body
+  &.sidebar-main div#footer
+    margin: 25px auto 25px auto
+    width: 710px
+    border: solid 3px #815608
+    border-radius: 15px
+
+    /*borde redondeado de radio 15px
+    clear: right
+
+  /* Ya que el div encima es tipo float:right, es necesario decirle ahora que coloque este div cuando no hay ningún div que este flotando a la derecha
+
+  &.main-sidebar div
+    &#footer
+      margin: 15px auto 15px auto
+      width: 710px
+      border: solid 3px #815608
+      border-radius: 15px
+
+      /*borde redondeado de radio 15px
+      clear: left
+
+    /* Ya que el div encima es tipo float:left, es necesario decirle ahora que coloque este div cuando no hay ningún div que este flotando a la izquierda
+
+    &#main
+      width: 490px
+      border: solid 4px green
+
+  &.sidebar-main div#main
+    width: 490px
+    border: solid 4px green
+
+  &.main-sidebar div#body, &.sidebar-main div#body
+    margin: auto auto auto auto
+    width: 710px
+    border: solid 4px #FFF
+
+  &.main-sidebar div#sidebar, &.sidebar-main div#sidebar
+    padding-top: 10px
+    display: block
+    width: 200px
+    border: solid 1px #CCC
+
+  &.main-sidebar div
+    &#main, &#sidebar
+      float: left
+      border: dotted 1px green
+
+  &.sidebar-main div
+    &#main, &#sidebar
+      float: right
+      border: dotted 1px green
+
+div#header div
+  &#logo
+    margin-bottom: inherit
+    border: dotted 1px green
+    float: left
+
+  /*Hago estas caja flotante, y las siguientes cajas que estén en la misma posición también serám flotantes a la izquierda. No hace falta ponerle a div#header div#main-title también eta propiedad
+
+  &#main-title
+    width: 600px
+    margin-bottom: inherit
+    border: dotted 1px blue
+    padding-bottom: 10px
+
+/* DEFINE LOS ENLACES DE MEnU
+
+a.menus
+  &:link
+    text-decoration: none
+    color: #000000
+    background-color: #815608
+    border: #FFFFFF 1px solid
+
+  &:visited
+    text-decoration: none
+    color: #cccccc
+
+  &:active
+    text-decoration: none
+    color: #003399
+    background: green
+    border: #FFFFFF 1px solid
+
+  &:hover
+    text-decoration: underline
+    color: #003399
+    background: red
+    border: #FFFFFF 1px solid
+
+/* Link no visitado
+
+/*Link visitado
+
+/*Link activo
+
+/*Ratón sobre el link
+
+#div_ma
+  text-align: right
